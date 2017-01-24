@@ -6,14 +6,21 @@ $base-font-color:#666666;
 
 
 /* Background Colors */
+/*primary=#00aff0*/
 
-$primary-color:#00aff0;
-$secondary-color:#7fba00;
-$light-color:#e4eef2;
-$dark-color:#2b5464;
+/*secondary=#7fba00*/
+/*light=:#e4eef2*/
+
+
+/*dark-color=*#2b5464*/
+
+$primary-color:#fff;
+$secondary-color:#ddd;
+$light-color:#eee;
+$dark-color:#00f;
 
 
 /* Showcase Area */
 
-$showcase-height:400px;
+$showcase-height:500px;
 $showcase-image:'../img/showcase.jpg';

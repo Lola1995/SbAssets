@@ -1,5 +1,5 @@
-<?php 
+<?php
 require 'core.php';
 session_destroy();
-header('Location:http://localhost/sbAssetss/');
+header('Location:login.php');
 ?>

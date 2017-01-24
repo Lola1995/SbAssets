@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+<title>Send mail</title>
+
+<style>
+body{
+  text-align: center;
+  font-family: "Segoe UI", "Segoe WP", "Segoe Regular", sans-serif;
+  font-size: 15px;
+  line-height: 1.7em;
+  color: #666666;
+}
+label{
+padding: 10px;
+display: block;
+color:black;
+}
+input{
+  width: 300px;
+  border:3px solid  #666666;
+  height: 30px;
+  border-radius: 3%;
+}
+textarea{
+  width: 300px;
+  height: 500px;
+  border:3px solid  #666666;
+  height: 30px;
+}
+</style>
+
+
+</head>
+
+<body>
+
+
+<form role="form" action="sendmail.php" method="post">
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input type="text" class="form-control" name="name" id="name" placeholder="Enter name">
+      </div>
+      <div class="form-group">
+      <label for="phone">Phone Number</label>
+      <input type="text" name="phone"class="form-control" id="phone" placeholder="Enter phone">
+      </div>
+      <div class="form-group">
+      <label for="email">Email address</label>
+      <input type="email" name="email" class="form-control" id="email" placeholder="Enter email">
+      </div>
+                              <div class="form-group">
+      <label for="message" >Message</label>
+      <textarea class="form-control" name="message" id="message"></textarea>
+      </div>
+      <button type="submit" name="submit"  class="btn btn-primary">Submit</button>
+  </form></html>
+</body>

@@ -1,6 +1,6 @@
 /*
-	SkyApp Bootstrap Sass Theme
-	Author: Brad Traversy
+	SBAssets
+	Author: Cryce Truly
 	Version: 0.0.1
 */
 /* BASE - Base styles, variables, mixins, etc */
@@ -65,10 +65,10 @@ body {
   font-family: "Segoe UI", "Segoe WP", "Segoe Regular", sans-serif;
   font-size: 15px;
   line-height: 1.7em;
-  color: #666666;
+   color: #666666;
 }
 
-/* line 8, ../scss/base/_base.scss */
+/* line 8, ../scss/base/_base.scss (need to cahnge this again)*/
 a {
   color: #00aff0;
 }
@@ -181,11 +181,11 @@ img.device-small {
   font-size: 40px;
 }
 
-/* line 74, ../scss/modules/_typography.scss */
+/* line 74, ../scss/modules/_typography.scss (need to uncomment this)
 .fa-primary {
   color: #00aff0;
 }
-
+*/
 /* line 78, ../scss/modules/_typography.scss */
 .fa-border {
   border: 1px solid #00aff0;
@@ -198,31 +198,32 @@ img.device-small {
 }
 
 /* Headings */
-/* line 89, ../scss/modules/_typography.scss */
+/* line 89, ../scss/modules/_typography.scss (need to uncomment)
 .heading-primary, .heading-primary-a {
   color: #00aff0;
 }
-
+*/
 /* line 93, ../scss/modules/_typography.scss */
 .heading-primary-a {
   border-bottom: 2px solid #00aff0;
 }
 
-/* line 98, ../scss/modules/_typography.scss */
+/* line 98, ../scss/modules/_typography.scss (need to uncomment)
 .heading-secondary, .heading-secondary-a {
   color: #7fba00;
 }
+*/
 
 /* line 102, ../scss/modules/_typography.scss */
 .heading-secondary-a {
   border-bottom: 2px solid #7fba00;
 }
 
-/* line 107, ../scss/modules/_typography.scss */
+/* line 107, ../scss/modules/_typography.scss (need to uncomment)
 .heading-light, .heading-light-a {
   color: #e4eef2;
 }
-
+ */
 /* line 111, ../scss/modules/_typography.scss */
 .heading-light-a {
   border-bottom: 2px solid #e4eef2;
@@ -367,13 +368,15 @@ section {
 
 /* line 7, ../scss/modules/_sections.scss */
 .section-showcase {
-  height: 400px;
- /* background: url("../img/showcase.jpg") no-repeat top center;*/
+  height:370px;
+
 }
 /* line 11, ../scss/modules/_sections.scss */
 .section-showcase .showcase-content {
-  padding: 110px 15px;
+  padding: 80px 15px;
   text-align: center;
+  color:#008abd;
+    background:url("img/buy.jpg")no-repeat top center;
 }
 /* line 16, ../scss/modules/_sections.scss */
 .section-showcase h1 {
@@ -476,7 +479,7 @@ section {
   height: 50px;
   width: 80%;
   border: 2px solid #00aff0;
-  font-size: 18px;
+  font-size: 14px;
   padding-left: 10px;
   padding-bottom: 5px;
 }
@@ -493,13 +496,13 @@ section {
 /* Navbar */
 /* line 4, ../scss/layouts/_nav.scss */
 .navbar {
-  width: 90%;
+  width: 100%;
   margin: auto;
   border-left: 1px solid #e7e7e7;
   border-right: 1px solid #e7e7e7;
   border-color: #e7e7e7;
   min-height: 60px;
-  background: #fff;
+  /*background: #fff;*/
   margin-bottom: 30px;
 }
 /* line 13, ../scss/layouts/_nav.scss */
@@ -513,7 +516,7 @@ section {
 
 /* line 23, ../scss/layouts/_nav.scss */
 .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus, .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
-  background: #00aff0 !important;
+  /*background: #00aff0 !important;*/
   color: #fff !important;
 }
 
@@ -522,7 +525,7 @@ section {
 .footer-main {
   background: #2b5464;
   color: #ffffff;
-  border-top: 5px solid #7fba00;
+  border-top: 5px solid #333;
   min-height: 200px;
   padding: 30px 0;
   z-index: 100;
@@ -542,51 +545,7 @@ section {
   list-style: none;
 }
 
-/* Blog */
-/* line 3, ../scss/layouts/_blog.scss */
-.blog-post {
-  border-top: 1px solid #cccccc;
-  border-left: 1px solid #cccccc;
-  border-right: 1px solid #cccccc;
-  padding: 15px;
-}
-/* line 8, ../scss/layouts/_blog.scss */
-.blog-post h2.page-header {
-  margin-top: 5px !important;
-}
-
-/* line 13, ../scss/layouts/_blog.scss */
-.blog-featured {
-  float: left;
-  margin-right: 15px;
-}
-
-/* line 18, ../scss/layouts/_blog.scss */
-.post-meta {
-  background: #f3f3f3;
-  padding: 10px 10px 10px 10px;
-  border: 1px solid #cccccc;
-  margin-bottom: 20px;
-}
-
 @media (max-width: 768px) {
-  /* line 2, ../scss/layouts/_mobile.scss */
-  .search {
-    display: inline-block;
-    text-align: center;
-  }
-
-  /* line 7, ../scss/layouts/_mobile.scss */
-  .device {
-    display: block;
-    margin: 20px auto 0 auto;
-  }
-
-  /* line 12, ../scss/layouts/_mobile.scss */
-  .device-small {
-    margin-bottom: 20px !important;
-  }
-
   /* line 17, ../scss/layouts/_mobile.scss */
   .footer-main ul {
     margin-bottom: 20px;
@@ -597,10 +556,31 @@ section {
     text-align: center;
   }
 }
-.posts{
-  border:1px solid mediumseagreen;
 
+.section-map{
+  margin-top:5%;
 }
-.chats{
-  margin-top:80px;
+
+.selling{
+  margin-top:25%;
+  height:200px;
+  text-align:center;
+  padding: inherit;
+}
+
+.feedback{
+  margin-top:50px;
+  padding:20px;
+}
+
+
+/*left description styles*/
+
+.left_description{
+    color: #fff !important;
+    background: black;
+}
+.bsimage{
+  margin-top:10px;
+  padding: 10px 10px 10px 0px;
 }

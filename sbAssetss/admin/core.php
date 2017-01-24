@@ -1,6 +1,5 @@
 <?php
-include 'connect.php';
-
+require 'connect.php';
 ob_start();
 session_start();
 
@@ -18,7 +17,7 @@ function loggedin()
 
 function getuserfield($field)
 {
-	global $db;
+	global $mysql_connect;
 	$query = "SELECT ".$field." FROM users WHERE id='".$_SESSION['user_id']."'";
 	if($query_run = mysqli_query($mysql_connect, $query))
 	{
@@ -26,7 +25,7 @@ function getuserfield($field)
 		$query_row = mysqli_fetch_assoc($query_run);
 		$return_field = $query_row[$field];
 		return $return_field;
-
-	}
+		
+	}	
 }
 ?>
