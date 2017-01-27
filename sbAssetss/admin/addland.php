@@ -21,10 +21,13 @@ $target="images/".basename($_FILES['image']['name']);
 
 include "connect.php";
 
+$time=time();
+$actualtime=date('D M Y H:i:s',$time);
 
 
 
-$sql="INSERT INTO `land` (`land_id`, `posted_on`, `land_image`, `land_description`) VALUES (NULL, NOW(),'$image', '$description');";
+
+$sql="INSERT INTO `land` (`land_id`, `posted_on`, `land_image`, `land_description`) VALUES (NULL, '$actualtime','$image', '$description')";
 
 
 

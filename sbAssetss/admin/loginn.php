@@ -30,7 +30,7 @@ if(isset($_POST['username']) && isset($_POST['password']))
 				$query_row = mysqli_fetch_assoc($query_run);
 				$user_id = $query_row['userid'];
 				$_SESSION['user_id'] = $user_id;
-				header('Location:http://localhost/sbAssetss/admin/index.php');
+				header('Location:admin/index.php');
 			}
 		}
 	}

@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>SbAssets | Buy property in uganda,sell assets rent out property whatever you want we have got it in uganda be it cars,land,houses</title>
+      <meta name="description" content=" Buy property in uganda,sell assets rent out property whatever you want we have got it in uganda be it cars,land,houses">
+    <title>Marketplace | Houses cars land to buy in mbarara.search and settle once</title>
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
     <!-- Custom styles for this template -->
@@ -231,35 +232,42 @@ echo "<hr>";
 	</section>
 
 
-	<footer class="footer-main">
-		<div class="container">
-			<div class="row">
+  	<footer class="footer-main">
+  		<div class="container">
+  			<div class="row">
 
-				<div class="col-md-6">
+  				<div class="col-md-6">
 
-					<ul><h4>About</h4>
-						<li><a href="#">What is SBAssets?</a></li>
-						<li><a href="#">View Our Clients</a></li>
-						<li><a href="#">Advertise With Us</a></li>
-						<li><a href="#">Work for us</a></li>
-					</ul>
-				</div>
-				<div class="col-md-6">
+  					<ul><h4>About</h4>
+  					<li><a href="index.html">What is SBAssets?</a></li>
+  						<li><a href="addvertise.html">Advertise With Us</a></li>
 
-					<ul><h4>Support</h4>
-						<li><a href="#">Support Home</a></li>
-						<li><a href="#">Our Community</a></li>
-						<li><a href="#">Contact Us</a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</footer>
+  					</ul>
+  				</div>
+  				<div class="col-md-6">
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.js"></script>
-  </body>
-</html>
+  					<ul><h4>Support</h4>
+  						<li><a href="community.html">Our Community</a></li>
+  						<li><a href="contact.html">Contact Us</a></li>
+  					</ul>
+  				</div>
+  			</div>
+  		</div>
+      <div class="row">
+        <div class="col-md-5 col-sm-6 col-xs-5">
+        </div>
+          <div class="col-md-7 col-sm-6 col-xs-7">
+  <a href="https://www.facebook.com/SBAssets-Mbarara-1855453564702152/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+  <i class="fa fa-twitter" aria-hidden="true"></i>
+  <i class="fa fa-instagram" aria-hidden="true"></i>
+    </div>
+  </div>
+  	</footer>
+
+      <!-- Bootstrap core JavaScript
+      ================================================== -->
+      <!-- Placed at the end of the document so the pages load faster -->
+      <script src="js/jquery.js"></script>
+      <script src="js/bootstrap.js"></script>
+    </body>
+  </html>

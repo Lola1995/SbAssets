@@ -25,9 +25,12 @@ $target="images/".basename($_FILES['image']['name']);
 include "connect.php";
 
 
+$time=time();
+$actualtime=date('D M Y H:i:s',$time);
 
 
-$sql="INSERT INTO `devices` (`device_id`, `posted_on`, `device_name`, `device_image`, `device_description`) VALUES (NULL, NOW(), '$name', '$image', '$description');";
+
+$sql="INSERT INTO `devices` (`device_id`, `posted_on`, `device_name`, `device_image`, `device_description`) VALUES (NULL, '$actualtime', '$name', '$image', '$description');";
 
 
 

@@ -417,28 +417,6 @@ section {
   color: #ffffff;
 }
 
-/* Carousel */
-/* line 3, ../scss/modules/_components.scss */
-.carousel {
-  margin-bottom: 20px;
-}
-
-/* line 7, ../scss/modules/_components.scss */
-.carousel img {
-  padding: 3px;
-  border: 1px solid #cccccc;
-}
-
-/* Tabs */
-/* line 14, ../scss/modules/_components.scss */
-.tab-pane {
-  padding: 20px 10px;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
-  margin-bottom: 20px;
-}
-
 /* line 20, ../scss/modules/_components.scss */
 .tab-primary .tab-pane, .tab-primary .nav-tabs > li.active > a, .tab-primary .nav-tabs > li.active > a:hover, .tab-primary .nav-tabs > li.active > a:focus {
   background: #00aff0;
@@ -581,6 +559,17 @@ section {
     background: black;
 }
 .bsimage{
-  margin-top:10px;
+  margin-top:50px;
   padding: 10px 10px 10px 0px;
+}
+
+
+.community ,{
+  margin-top: 100px;
+  min-height: 300px;
+}
+
+
+.contactt{
+  margin-top: 80px;
 }

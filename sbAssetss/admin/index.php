@@ -9,7 +9,7 @@ if(loggedin())
 }
 else
 {
-	header('Location:http://localhost/sbassetss/admin/login.php');
+	header('Location:login.php');
 }
 
  ?>
@@ -45,12 +45,12 @@ else
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
       </button>
-      <li><a class="navbar-brand" href="index.html">SBAssets</a></li>
+      <li><a class="navbar-brand" href="../index.html">SBAssets</a></li>
     </div>
 
     <div class="collapse navbar-collapse">
       <ul class="nav navbar-nav">
-        <li><a href="#">Marketplace home</a></li>
+        <li><a href="../marketplace.php">Marketplace home</a></li>
 
                 <li><a href="#" data-toggle="modal" data-target="#popUpWindow">Add Vehicle</a></li>
                 <li><a href="#" data-toggle="modal" data-target="#addhouse">Add Houses</a></li>
@@ -318,11 +318,12 @@ $target="images/".basename($_FILES['image']['name']);
 
 include "connect.php";
 
-
+$time=time();
+$actualtime=date('D M Y H:i:s',$time);
 
 
 $sql="INSERT INTO `vehicles` (`vehicle_id`,`posted_on`, `vehicle_name`, `vehicle_image`,`vehicle_description`)
- VALUES (NULL, NOW(),'$name', '$image','$description')";
+ VALUES (NULL, '$actualtime','$name', '$image','$description')";
 
 
 
@@ -386,7 +387,12 @@ echo "please fill all fields";
 
 $target="images/".basename($_FILES['image']['name']);
 
-$sql="INSERT INTO `houses` (`house_id`, `posted_on`, `house_image`, `house_description`) VALUES (NULL, NOW(), '$image','$description')";
+$time=time();
+
+$actualtime=date('D M Y h:i:s',$time);
+
+
+$sql="INSERT INTO `houses` (`house_id`, `posted_on`, `house_image`, `house_description`) VALUES (NULL,'$actualtime', '$image','$description')";
 
 
 

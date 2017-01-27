@@ -10,6 +10,10 @@ $name=trim($_POST['name']);
 $phone=trim($_POST['phone']);
 $email=trim($_POST['email']);
 $message=trim($_POST['message']);
+htmlentities($name);
+htmlentities($phone);
+htmlentities($email);
+htmlentities($message);
 
 
 
